@@ -6,11 +6,10 @@ file.close()
 # w : écriture
 # x : création 
 
-with open("file.txt", "x") as document:
-    document.write("bana monde entier!")
 
-with open("file.txt", "w") as document:
+
+with open("file.txt", "w", encoding="utf-8") as document:
     document.write("hello world!")
 
-with open("file.txt", "a") as document:
+with open("file.txt", "a", encoding="utf-8") as document:
     document.write("\nhello world again!")
